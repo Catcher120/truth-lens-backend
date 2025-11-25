@@ -10,7 +10,7 @@ const app = express();
 app.use(express.json());
 app.use(cors(
   {
-    origin: true,
+    origin: "https://truth-lens-frontend-deploy-9yblvwjw8-catchers-projects-0dd9fc92.vercel.app",
   }
 ));
 const upload = multer({ storage: multer.memoryStorage() });
