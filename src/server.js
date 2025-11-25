@@ -10,10 +10,7 @@ const app = express();
 app.use(express.json());
 app.use(cors(
   {
-    origin: [
-  "https://truth-lens-backend.onrender.com",
-  "https://truth-lens-backend.onrender.com/",
-]
+    origin: true,
   }
 ));
 const upload = multer({ storage: multer.memoryStorage() });
